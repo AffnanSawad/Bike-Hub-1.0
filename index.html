@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike-Hub-1.0</title>
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+   <style>
+     *{
+         
+         font-family: "Poppins", sans-serif;
+         
+       }
+   </style>
+
 
     <!-- daisyui & tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -13,7 +26,7 @@
 <body>
     
 
-   <header>
+   <header class="md:max-w-7xl mx-auto">
       
     <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -28,7 +41,7 @@
                 <li><a>Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">Bike-Hub-1.0</a>
+          <a class="btn btn-ghost text-2xl">Bike-Hub-1.0</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -43,10 +56,118 @@
         </div>
       </div>
 
+
+      <!-- banner -->
+
+      <div class=" flex flex-col lg:flex flex-row ">
+     
+
+        <div class="hero min-h-screen bg-blue-200 lg:p-20">
+                 
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img  src="/images/slider/bike4.png" class="max-w-sm rounded-lg shadow-2xl w-6/12" />
+                <div>
+
+                <h1 class="text-5xl font-bold">Honda CBR 300R</h1>
+                <p class="py-6 w-6/12">The Honda CBR300R offers a blend of performance, efficiency, and style, making it a great choice for beginners and experienced riders alike..</p>
+                <button class="btn btn-error">Purchase</button>
+
+               
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+
    </header>
 
    
-   <main></main>
+   <main class="md:max-w-7xl mx-auto">
+
+    
+    <div class="featured">
+        <h3 class="text-2xl font-bold my-10 text-center ">Featured Bikes In This Year</h3>
+
+    <div class="grid grid-cols-1  md:flex gap-5 lg:flex gap-5 ">
+        <img src="/images/slider/bike1.png" alt="">
+        <img src="/images/slider/bike2.png" alt="">
+        <img src="/images/slider/bike3.png" alt="">
+    </div>
+
+
+    </div>
+
+
+    <div class="latest">
+     
+
+        <h3 class="text-2xl font-bold my-10 text-center ">Featured Bikes In This Year</h3>
+         
+        <div class="latest-bikes grid grid-cols-1 my-4 mx-5 md:grid-cols-3 gap-2 mt-2 mb-2 lg:grid-cols-3 
+        
+        
+        
+        ">
+
+
+            <div class="card card-compact w-96 bg-base-100 shadow-2xl">
+                <figure><img src="/images/others/latest1.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-xl font-bold">DUCATI XDIAVEL S-73</h2>
+                  <p>The Ducati XDiavel S is a high-performance cruiser with a 1262cc Testastretta DVT L-Twin engine producing 152 HP and 92.9 lb-ft of torque, featuring a 6-speed transmission, electronic fuel injection, and a blend of cruiser comfort with sportbike agility.</p>
+                  <div class="card-actions m-2">
+                    <button class="btn btn-error">Read More</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card card-compact w-96 bg-base-100 shadow-2xl">
+                <figure><img src="/images/others/latest2.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-xl font-bold">HONDA CVR 250R</h2>
+                  <p>The Honda CBR250R is a lightweight sportbike with a 249cc single-cylinder, four-stroke engine, producing 27 HP and 17 lb-ft of torque, featuring a 6-speed transmission, liquid cooling, and a sporty yet comfortable design for versatile riding.
+                  </p>
+                  <div class="card-actions m-2">
+                    <button class="btn btn-error">Read More</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card card-compact w-96 bg-base-100 shadow-2xl">
+                <figure><img src="/images/others/latest2.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title text-xl font-bold">HONDA CVR 500R</h2>
+                  <p> The Honda CBR500R features a 471cc parallel-twin engine, producing 47 HP and 32 lb-ft of torque, with a 6-speed transmission, liquid cooling, and a fuel-injection system, offering a blend of performance and efficiency suitable for both new and experienced riders.
+                  </p>
+                  <div class="card-actions m-2">
+                    <button class="btn btn-error">Read More</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+        </div>
+
+
+    </div>
+ 
+
+
+     <div class="clients">
+
+    <h3 class="text-4xl font-bold text-center my-10 lg:my-24">Happy <span class="text-orange-500">Clients Says</span> </h3>
+
+
+     </div>
+
+
+
+
+   </main>
 
     
    <footer></footer>
